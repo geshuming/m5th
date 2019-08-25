@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
   <meta name="author" content="Qi Ji" />
-
-
   <meta name="dcterms.date" content="25th August 2019" />
-
   <title>Exercise 1.19</title>
   <style>
       code{white-space: pre-wrap;}
@@ -18,23 +14,15 @@
       q { quotes: "“" "”" "‘" "’"; }
   </style>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata|PT+Sans|PT+Sans+Narrow:700">
-  <link rel="stylesheet" href="../css/pandoc.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/pandoc.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
 <main role="main">
-<h1 class="title">Exercise 1.19</h1>
-<article>
 <header>
-
-
-<p class="author">Qi Ji</p>
-
-
+<h1 class="title">Exercise 1.19</h1><p class="author">Qi Ji</p>
 <p class="date">25th August 2019</p>
-
 </header>
-
+<article>
 <blockquote>
 <p>Make a regular expression which contains all those decimal natural numbers which start with <span class="math inline">\(3\)</span> or <span class="math inline">\(8\)</span> and have an even number of digits and end with <span class="math inline">\(5\)</span> or <span class="math inline">\(7\)</span>.</p>
 </blockquote>
@@ -48,6 +36,13 @@
 \texttt{EVEN} &amp;= \left\{0,2\right\}\cup\left(\left\{1\right\}\cdot\left\{0,2\right\}^*\cdot\left\{1\right\}\right)
 \end{align*}\]</span> and we match all ternary numbers with the expression <span class="math display">\[ \texttt{ODD}\cdot\texttt{EVEN}^*. \]</span></p>
 </article>
+<hr />
+<footer>
+  Generated from
+  <a target="_blank" href="https://raw.githubusercontent.com/qjqqyy/m5th/master/CS4232/tutorialweek2.md">CS4232/tutorialweek2.md</a>
+  with
+  <a href="http://github.com/jaspervdj/hakyll">hakyll</a>.
+</footer>
 </main>
 </body>
 </html>

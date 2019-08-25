@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
   <meta name="author" content="Qi Ji" />
-
-
   <meta name="dcterms.date" content="23rd August 2019" />
-
   <title>MA5220 Homework 1</title>
   <style>
       code{white-space: pre-wrap;}
@@ -18,23 +14,15 @@
       q { quotes: "“" "”" "‘" "’"; }
   </style>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata|PT+Sans|PT+Sans+Narrow:700">
-  <link rel="stylesheet" href="../css/pandoc.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/pandoc.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
 <main role="main">
-<h1 class="title">MA5220 Homework 1</h1>
-<article>
 <header>
-
-
-<p class="author">Qi Ji</p>
-
-
+<h1 class="title">MA5220 Homework 1</h1><p class="author">Qi Ji</p>
 <p class="date">23rd August 2019</p>
-
 </header>
-
+<article>
 <h1 id="prove-fact-3.3"><span class="header-section-number">1</span> Prove Fact 3.3</h1>
 <h2 id="a" class="unnumbered">(a)</h2>
 <blockquote>
@@ -95,6 +83,13 @@
 <p>Without loss of generality we can only consider the case in which <span class="math inline">\(\operatorname{type}(X,\prec_1) = \omega_1\)</span> (by only considering the <span class="math inline">\(\prec_1\)</span>-initial segment of <span class="math inline">\(X\)</span> otherwise, and <span class="math inline">\((X,\prec_2)\)</span> will still be a well order). Now let <span class="math inline">\(Z\)</span> be the <span class="math inline">\(\prec_2\)</span>-initial segment of <span class="math inline">\(X\)</span> such that <span class="math inline">\(\operatorname{type}(Z,\prec_2) = \omega_1\)</span>. Define <span class="math display">\[ \mathcal{F} = \left\{Y\subseteq Z: \left(\forall a,b\in Y\right)\left(a\prec_1 b \iff a\prec_2 b\right) \right\} \]</span> <span class="math inline">\(\mathcal{F}\)</span> is non-empty (otherwise one of the orderings will fail to be a well order) and it is clear that <span class="math inline">\(\mathcal{F}\)</span> has finite character. By Teichmüller-Tukey (AC) every <span class="math inline">\(W\in \mathcal{F}\)</span> is contained in a maximal <span class="math inline">\(M\in\mathcal{F}\)</span>. Suppose the result fails and let <span class="math inline">\(Y\in\mathcal{F}\)</span> be maximal, then <span class="math inline">\(Y\)</span> is at most countable.</p>
 <p>Note that <span class="math inline">\(\operatorname{type}(Z,\prec_1) = \omega_1\)</span> still, let <span class="math display">\[ Y_1 = \left\{z\in Z: \left(\exists y\in Y\right)\left(z \preccurlyeq_1 y\right)\right\} \]</span> since no element of <span class="math inline">\(\omega_1\)</span> has uncountably many predecessors, <span class="math inline">\(|Y_1| \leq \omega_0\)</span>. Define <span class="math inline">\(Y_2\)</span> analogously. Let <span class="math inline">\(w \in Z\setminus\left(Y_1\cup Y_2\right)\)</span>, the set is not empty since <span class="math inline">\(Y_1\cup Y_2\)</span> is only countable. Note that <span class="math inline">\(w\)</span> satisfies <span class="math display">\[\left(\forall y\in Y\right)\left(y\prec_1 w\right) \land \left(\forall y\in Y\right)\left(y\prec_2 w\right),\]</span> which means <span class="math inline">\(Y\cup\left\{w\right\} \in \mathcal{F}\)</span>, contradicting maximality of <span class="math inline">\(Y\)</span>. <span class="math inline">\(\square\)</span></p>
 </article>
+<hr />
+<footer>
+  Generated from
+  <a target="_blank" href="https://raw.githubusercontent.com/qjqqyy/m5th/master/MA5220/homework1.md">MA5220/homework1.md</a>
+  with
+  <a href="http://github.com/jaspervdj/hakyll">hakyll</a>.
+</footer>
 </main>
 </body>
 </html>

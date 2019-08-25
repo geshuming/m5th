@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
   <meta name="author" content="Qi Ji [A0167793L]" />
-
-
   <meta name="dcterms.date" content="22nd Feb 2019" />
-
   <title>MA2108S Homework sets 1, 2, 3</title>
   <style>
       code{white-space: pre-wrap;}
@@ -18,23 +14,15 @@
       q { quotes: "“" "”" "‘" "’"; }
   </style>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata|PT+Sans|PT+Sans+Narrow:700">
-  <link rel="stylesheet" href="../css/pandoc.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/pandoc.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
 <main role="main">
-<h1 class="title">MA2108S Homework sets 1, 2, 3</h1>
-<article>
 <header>
-
-
-<p class="author">Qi Ji [A0167793L]</p>
-
-
+<h1 class="title">MA2108S Homework sets 1, 2, 3</h1><p class="author">Qi Ji [A0167793L]</p>
 <p class="date">22nd Feb 2019</p>
-
 </header>
-
+<article>
 <h1 id="homework-1">Homework 1</h1>
 <h2 id="q1">Q1</h2>
 <p>We borrow some standard notation from Set Theory, so when <span class="math inline">\(X\)</span> is a set and <span class="math inline">\(n\in{\mathbb{N}}\cup{\left\{\, 0 \,\right\}}\)</span>, <span class="math inline">\([X]^n\)</span> denotes the set <span class="math inline">\({\left\{\, x\subset X: \left\lvert x \right\rvert = n \,\right\}}\)</span>.</p>
@@ -151,6 +139,13 @@ a + ab + ac + abc \stackrel{?}{\leq} b + ab + bc + abc + c + ac + bc + abc
 <p>To show <span class="math inline">\(E\)</span> is compact, we first check that <span class="math inline">\(E\)</span> is obviously bounded. Now we show the complement of <span class="math inline">\(E\)</span> is open. Let <span class="math inline">\(x \in E^c\)</span>, if <span class="math inline">\(x\notin [0,1]\)</span> it’s trivial to find a neighbourhood around <span class="math inline">\(x\)</span> that lies in <span class="math inline">\(E^c\)</span>, so WLOG assume <span class="math inline">\(x \in [0,1]\)</span>. Let <span class="math inline">\(x = 0.a_1a_2a_3\dots\)</span> where each <span class="math inline">\(a_i \in {\left\{\, 0,1,\dots,9 \,\right\}}\)</span>, since <span class="math inline">\(x\notin E\)</span>, let <span class="math inline">\(k\)</span> be the smallest index such that <span class="math inline">\(a_k \ne 4, a_k \ne 7\)</span>. Set <span class="math inline">\(\delta = \frac1{10^{k+999}}\)</span> and we see that any number in the ball <span class="math inline">\((x-\delta, x+\delta)\)</span> will still have the same <span class="math inline">\(k\)</span>-th digit in its decimal expansion, so it will still lie in <span class="math inline">\(E^c\)</span>.</p>
 <p>To see that <span class="math inline">\(E\)</span> is perfect, let <span class="math inline">\(x \in E\)</span>. We want to show that <span class="math inline">\(x\)</span> is a limit point. Let <span class="math inline">\(\varepsilon&gt; 0\)</span> be arbitrary, use Archimedean property to find <span class="math inline">\(n\in{\mathbb{N}}\)</span> such that <span class="math inline">\(\frac1{10^n} &lt; \varepsilon\)</span>. Express <span class="math inline">\(x\)</span> as its decimal expansion <span class="math inline">\(x = 0.a_1a_2a_3\dots\)</span>, where <span class="math inline">\(a_i \in {\left\{\, 0,4,7 \,\right\}}\)</span> (treat finite decimal expansions as being right-padded with trailing zeroes). Now set <span class="math display">\[ y = 0.a_1a_2\dots a_na_{n+1}f(a_{n+2})a_{n+3}\dots \]</span> where <span class="math display">\[ f(0) = 4; f(4) = 7; f(7) = 4. \]</span> Now verify that <span class="math inline">\(y\in E\)</span>, and after that we can check that <span class="math inline">\(\left\lvert y-x \right\rvert &lt; \frac{1}{10^{n+1}} &lt; \varepsilon\)</span>.</p>
 </article>
+<hr />
+<footer>
+  Generated from
+  <a target="_blank" href="https://raw.githubusercontent.com/qjqqyy/m5th/master/MA2108S/hw123.md">MA2108S/hw123.md</a>
+  with
+  <a href="http://github.com/jaspervdj/hakyll">hakyll</a>.
+</footer>
 </main>
 </body>
 </html>
